@@ -14,6 +14,10 @@ const userroute = require('./routes/user/user-auth')
 app.use('/db/users', userroute)
 
 
+app.get('/' ,(req,res) => {
+    res.send("working bitch")
+})
+
 app.get('/db',(req,res) => {
     res.send("hi")
 })
